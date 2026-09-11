@@ -35,3 +35,53 @@ void main()
 ---------------------------------------------------------------------------------
 
 Read marks of 5 subjects and calculate total and average.
+
+#include <stdio.h>
+
+void main()
+{
+    int m1,m2,m3,m4,m5;
+    float total=0,avg=0;
+    printf("Enter 5 Subjects marks:");
+    scanf("%d %d %d %d %d",&m1,&m2,&m3,&m4,&m5);
+    total = m1+m2+m3+m4+m5;
+    avg = total/5;
+    printf("Total:%.2f\n",total);
+    printf("Average:%.2f\n",avg);
+}
+
+--------------------------------------------------------------------------------------
+
+Swap two numbers using a third variable.
+
+#include <stdio.h>
+
+void main()
+{
+    int a = 20, b = 10,temp;
+    temp = a;
+    a = b;
+    b = temp;
+    printf("Value of a:%d\n",a);
+    printf("Value of b:%d\n",b);
+}
+
+--------------------------------------------------------------------------------------
+
+Swap two numbers without using a third variable.
+
+#include <stdio.h>
+
+void main()
+{
+    int a = 20, b = 10,temp;
+    a = a+b;
+    b = a-b;
+    a = a-b;
+    printf("Value of a:%d\n",a);
+    printf("Value of b:%d\n",b);
+}
+
+----------------------------------------------------------------------------------------
+
+
