@@ -1,0 +1,174 @@
+Print numbers from 1 to 10
+
+#include <stdio.h>
+
+void main()
+{
+    for(int i = 1;i<=10;i++)
+    {
+        printf("%d\n",i);
+    }
+}
+
+--------------------------------------------------------
+
+Print all even numbers from 1 to 50
+
+#include <stdio.h>
+
+void main()
+{
+    for(int i = 1;i<=50;i++)
+    {
+        if(i%2==0)
+        {
+        printf("%d\n",i);
+        }
+    }
+}
+
+---------------------------------------------------------
+
+Find the sum of numbers from 1 to N
+
+#include <stdio.h>
+
+void main()
+{
+    int sum=0;
+    for(int i = 1;i<=50;i++)
+    {
+        sum = sum + i;
+    }
+    printf("Sum of numbers from 1 to 50:%d",sum);
+}
+
+---------------------------------------------------------------
+
+Find the factorial of a number
+
+#include <stdio.h>
+
+void main()
+{
+    int num,fact=1;
+    printf("Enter the number:");
+    scanf("%d",&num);
+    for(int i = 1;i<=num;i++)
+    {
+        fact = fact*i;
+    }
+    printf("Factorial:%d",fact);
+}
+
+--------------------------------------------------------------------
+
+Reverse a number
+
+#include <stdio.h>
+
+void main()
+{
+    int num,rev=0;
+    printf("Enter the number:");
+    scanf("%d",&num);
+    while(num!=0)
+    {
+        rev=rev*10;
+        rev=rev+num%10;
+        num=num/10;
+    }
+    printf("The reverse number:%d",rev);
+}
+
+----------------------------------------------------------------------
+
+Count the number of digits in a number
+
+#include <stdio.h>
+
+void main()
+{
+    int num,count=0;
+    printf("Enter the number:");
+    scanf("%d",&num);
+    while(num!=0)
+    {
+        num=num/10;
+        count++;
+    }
+    printf("The Number of digits:%d",count);
+}
+
+--------------------------------------------------------------------
+
+Check whether a number is a palindrome
+
+#include <stdio.h>
+
+void main()
+{
+    int num,rev=0;
+    printf("Enter the number:");
+    scanf("%d",&num);
+    int original = num;
+    while(num!=0)
+    {
+        rev=rev*10;
+        rev=rev+num%10;
+        num=num/10;
+    }
+    if(original==rev)
+    {
+    printf("The number is a palindrome");
+    }
+    else
+    {
+        printf("The number is not a palindrome");
+    }
+}
+
+----------------------------------------------------------------------
+
+Check whether a number is prime
+
+#include <stdio.h>
+
+void main()
+{
+    int num,count=0;
+    printf("Enter the number:");
+    scanf("%d",&num);
+    for(int i=1;i<=num;i++)
+    {
+        if(num%i==0)
+        {
+            count++;
+        }
+    }
+    if(count==2)
+    {
+        printf("The number is prime");
+    }
+    else
+    {
+        printf("The number is not prime");
+    }
+}
+
+-------------------------------------------------------------------------
+
+Print the multiplication table of a number
+
+#include <stdio.h>
+
+void main()
+{
+    int num;
+    printf("Enter the number:");
+    scanf("%d",&num);
+    for(int i=1;i<=10;i++)
+    {
+        printf("%d x %d = %d\n",i,num,i*num);
+    }
+}
