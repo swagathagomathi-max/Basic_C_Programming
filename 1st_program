@@ -1,0 +1,37 @@
+1. Read two integers and print their sum, difference, product and quotient.
+
+#include <stdio.h>
+
+int a,b;
+
+void main()
+{
+    printf("Enter two integers:");
+    scanf("%d %d",&a,&b);
+    printf("Sum of two numbers:%d\n",a+b);
+    printf("Difference of two numbers:%d\n",a-b);
+    printf("Product of two numbers:%d\n",a*b);
+    printf("Quotient of two numbers:%d\n",a/b);
+    
+}
+
+--------------------------------------------------------------------------------
+
+2. Read the radius of a circle and find its area and circumference.
+
+#include <stdio.h>
+
+int r,pi=3.14;
+
+void main()
+{
+    printf("Enter radius of circle:");
+    scanf("%d",&r);
+    printf("Area of the circle:%d\n",pi*r*r);
+    printf("Circumference of the circle:%d\n",2*pi*r);
+    
+}
+
+---------------------------------------------------------------------------------
+
+Read marks of 5 subjects and calculate total and average.
