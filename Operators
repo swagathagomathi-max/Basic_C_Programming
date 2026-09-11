@@ -1,0 +1,85 @@
+Read an integer and find whether it is odd or even using the modulus operator
+
+#include <stdio.h>
+
+void main()
+{
+    int num;
+    printf("Enter the number:");
+    scanf("%d",&num);
+    if(num%2==0)
+    {
+        printf("The number is even");
+    }
+    else
+    {
+        printf("The number is odd");
+    }
+}
+
+------------------------------------------------------------------------------------
+
+Read a three-digit number and find the sum of its digits
+
+#include <stdio.h>
+
+void main()
+{
+    int num,hundred,ten,ones;
+    printf("Enter three digit number:");
+    scanf("%d",&num);
+    hundred = num/100;
+    ten = (num/10)%10;
+    ones = num%10;
+    printf("Sum of its digits:%d",hundred+ten+ones);
+}
+
+-------------------------------------------------------------------------------------
+
+Read a number and extract its last digit
+
+#include <stdio.h>
+
+void main()
+{
+    int num,last;
+    printf("Enter three digit number:");
+    scanf("%d",&num);
+    last = num%10;
+    printf("The last digit of the number is:%d",last);
+}
+
+-----------------------------------------------------------------------------------
+
+Predict the output
+
+int a = 10,b = 20;
+printf("%d\n",a++);
+printf("%d\n",++b);
+printf("%d\n",a);
+printf("%d\n",b);
+
+Output:
+10
+21
+11
+21
+
+----------------------------------------------------------------------------------
+
+Predict the output
+
+int a = 5;
+printf("%d\n",a++);
+printf("%d\n",++a);
+printf("%d\n",a--);
+printf("%d\n",a);
+
+Output:
+5
+7
+7
+6
+
+---------------------------------------------------------------------------------
+
