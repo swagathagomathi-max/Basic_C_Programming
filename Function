@@ -107,3 +107,39 @@ void fac(int num)
 
 Write a function to check whether a number is prime.
 
+#include <stdio.h>
+
+void prime(int);
+
+void main()
+{
+    int num;
+    printf("Enter the number:");
+    scanf("%d",&num);
+    prime(num);
+}
+
+void prime(int num)
+{
+    int count=0;
+    for(int i=1;i<=num;i++)
+    {
+        if(num%i==0)
+        {
+            count++;
+        }
+    }
+    if(count==2)
+    {
+        printf("The number is prime");
+    }
+    else
+    {
+        printf("The number is not prime");
+    }
+}
+
+------------------------------------------------------------------------------------------
+
+
+
