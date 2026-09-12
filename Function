@@ -1,0 +1,50 @@
+Write a function to find the square of a number.
+
+#include <stdio.h>
+void square(int);
+
+void main()
+{
+    int num;
+    printf("Enter number:");
+    scanf("%d",&num);
+    square(num);
+}
+
+void square(int num)
+{
+    printf("Square of the number: %d",num*num);
+}
+
+-----------------------------------------------------------------------
+
+Write a function to check whether a number is even.
+
+#include <stdio.h>
+
+void even(int);
+
+void main()
+{
+    int num;
+    printf("Enter number:");
+    scanf("%d",&num);
+    even(num);
+}
+
+void even(int num)
+{
+    if(num%2==0)
+    {
+    printf("The number is even");
+    }
+    else
+    {
+        printf("The number is odd");
+    }
+}
+
+---------------------------------------------------------------------------------
+
+Write a function to find the largest of three numbers.
+
