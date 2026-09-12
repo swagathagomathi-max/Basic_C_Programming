@@ -42,3 +42,7 @@ void main()
     }
     printf("The smallest element:%d",min);
 }
+
+----------------------------------------------------------------------
+
+Count the number of even and odd elements in an array.
